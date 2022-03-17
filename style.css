@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Sans";
+}
+
+.logo {
+    font-size: 3rem;
+    padding: 1rem 0 0;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    /* padding: 0 4rem; */
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.leftSide {
+    /* padding-top: 2rem; */
+    width: 40%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 46.5%;
+}
+
+.input label {
+    font-size: 1.25rem;
+}
+
+.input input {
+    width: 100%;
+}
+
+#download {
+    width: 100%;
+    font-family: "IBM Plex Sans";
+    margin-top: 2rem;
+    padding: 1.2rem 4rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #111;
+    color: white;
+    cursor:pointer;
+}
+
+
+
+
+.output {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    padding-top: 2.5rem;;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+svg {
+    width: 100%;
+    max-width: 600px;
+    background-color: #faebd7;
+    /* color: hsl(9, 88%, 81%);
+    background-color: hsl(14, 88%, 71%); */
+}
+
+.neck {
+    filter: brightness(90%) hue-rotate(5deg);
+}
+
+@media only screen and (max-width: 1250px) {
+    .container {
+      padding: 0 2rem;
+    }
+
+    .leftSide {
+        width: 45%;
+    }
+
+    .output {
+        width: 55%;
+    }
+  }
+@media only screen and (max-width: 1150px) {
+    .container {
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .leftSide,.output {
+        width: 100%;
+    }
+  }
+
+@media only screen and (max-width: 520px) {
+    .container {
+        padding: 0 1rem;
+    }
+    .input {
+        width: 46%;
+    }
+
+    .inputs {
+        gap: 1rem;
+    }
+  }
